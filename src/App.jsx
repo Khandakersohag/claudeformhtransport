@@ -1,4 +1,5 @@
 import { useState, useEffect, useMemo } from "react";
+import { Analytics } from '@vercel/analytics/react';
 
 const FONT_LINK = document.createElement("link");
 FONT_LINK.rel = "stylesheet";
@@ -2374,6 +2375,7 @@ export default function App(){
           </main>
         </div>
       </div>
+      <Analytics />
     </>
   );
     }
